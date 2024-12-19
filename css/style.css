@@ -29,6 +29,10 @@ h1 {
     margin: 20px 0;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .btn {
     display: block;
     width: 80%;
