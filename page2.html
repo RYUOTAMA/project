@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Information Table</title>
+  <title>Student Booking</title>
   <link rel="stylesheet" href="css/page2.css">
 </head>
 <body>
@@ -12,15 +12,17 @@
       <img src="img/unnamed.png" alt="Logo" class="logo">
     </div>
     <div class="table-container">
-      <table>
+      <table class="table">
         <thead>
           <tr>
             <th>ลำดับ</th>
             <th>ชื่อ-นามสกุล</th>
             <th>รหัสนักเรียน</th>
+            <th>อุปกรณ์ที่ยืม</th>
             <th>ระดับชั้น/สาขา</th>
-            <th>ห้องเรียน</th>
             <th>เวลา</th>
+            <th>วันที่</th>
+            <th>จัดการ</th>
           </tr>
         </thead>
         <tbody>
@@ -28,20 +30,25 @@
             <td>1</td>
             <td>ชยุต รุจิเศรษฐ์</td>
             <td>123456</td>
+            <td>ลูกบอล</td>
             <td>ปวช3 คอมพิวเตอร์</td>
-            <td>ปวช3/1</td>
             <td>10:00-11:00</td>
+            <td>12/19/2024</td>
+            <td><button class="btn delete-btn">ลบ</button></td>
           </tr>
           <tr>
             <td>1</td>
             <td>ชยุต รุจิเศรษฐ์</td>
             <td>123456</td>
+            <td>ลูกบอล</td>
             <td>ปวช3 คอมพิวเตอร์</td>
-            <td>ปวช3/1</td>
             <td>10:00-11:00</td>
+            <td>12/19/2024</td>
+            <td><button class="btn delete-btn">ลบ</button></td>
           </tr>
         </tbody>
       </table>
+      <button class="btn clear-all-btn">ลบทั้งหมด</button>
     </div>
   </div>
 </body>
