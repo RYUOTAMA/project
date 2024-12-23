@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/page1.css">
     <script src="script_page1.js" defer></script>  
 </head>
-<body>
+<body>  
     <form id="borrow-form">
         <div class="container">
             <img src="img/unnamed.png" alt="Logo" class="logo">
@@ -28,35 +28,31 @@
                 <option value="ปวช 2/ภาษาต่างประเทศ">ปวช 2/ภาษาต่างประเทศ</option>
                 <option value="ปวช 3/คอมพิเตอร์ธุรกิจ">ปวช 3/คอมพิเตอร์ธุรกิจ</option>
                 <option value="ปวช 3/ภาษาต่างประเทศ">ปวช 3/ภาษาต่างประเทศ</option>
-                <option value="ปวส 1">ปวส 1/-</option>
-                <option value="ปวส 2">ปวส 2/-</option>
-
+                <option value="ปวส 1/-">ปวส 1/-</option>
+                <option value="ปวส 2/-">ปวส 2/-</option>
             </select>
 
 <!--             <select name="dropdown" class="dropdown" id="dropdown_Prefix" required>
                 <option value="">คำนำหน้า</option>
-                <option value="">นาย</option>
-                <option value="">นางสาว</option>
+                <option value="นาย">นาย</option>
+                <option value="นางสาว">นางสาว</option>
             </select> -->
 
-            <input type="text" name="" placeholder="คำนำหน้า-ชื่อ-นามสกุล" class="input-field" id="Name_Surname" required>
+            <input type="text" placeholder="ชื่อ-นามสกุล" class="input-field" id="Name_Surname" required>
+            <input type="text" placeholder="รหัสนักเรียน" class="input-field" id="Student_ID" required>
 
-            <!-- <input type="text" placeholder="ชื่อ-นามสกุล" class="input-field"> -->
-            <input type="text" name="" placeholder="รหัสนักเรียน" class="input-field" id="Student_ID" required>
-            <!-- <input type="text" placeholder="ห้องเรียน/สาขา" class="input-field"> -->
             <div class="inputs">
-                <input type="date" class="field" id="date-field" required>
+                <input type="date" class="field" required>
                 <span class="time-separator">-</span>
-                <input type="date" class="field" id="date-field" required>
+                <input type="date" class="field" required>
             </div>
             <div class="inputs">
-                <input type="time" class="field" id="time-field" required>
+                <input type="time" class="field" required>
                 <span class="time-separator">-</span>
-                <input type="time" class="field" id="time-field" required>
+                <input type="time" class="field" required>
             </div>
             <button type="button" class="submit-btn" id="submit-btn" onclick="saveBorrowData()">ยืนยัน</button>
         </div>
     </form>
-    
 </body>
 </html>
