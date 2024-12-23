@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ยืมอุปกรณ์กีฬา</title>
   <link rel="stylesheet" href="css/page2.css">
+  <script src="script_page2.js" defer></script>  
 </head>
 <body>
   <div class="container">
@@ -12,20 +13,21 @@
       <img src="img/unnamed.png" alt="Logo" class="logo">
     </div>
     <div class="table-container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>ลำดับ</th>
-            <th>ชื่อ-นามสกุล</th>
-            <th>รหัสนักเรียน</th>
-            <th>อุปกรณ์ที่ยืม</th>
-            <th>ระดับชั้น/สาขา</th>
-            <th>เวลา</th>
-            <th>วันที่</th>
-            <th>จัดการ</th>
-          </tr>
-        </thead>
-        <tbody>
+      <table class="table" id="borrow-table">
+        
+          <thead>
+            <tr>
+              <th>ลำดับ</th>
+              <th>ชื่อ-นามสกุล</th>
+              <th>รหัสนักเรียน</th>
+              <th>อุปกรณ์ที่ยืม</th>
+              <th>ระดับชั้น/สาขา</th>
+              <th>เวลา</th>
+              <th>วันที่</th>
+              <th>จัดการ</th>
+            </tr>
+          </thead>
+        
           <tr>
             <td>1</td>
             <td>ชยุต รุจิเศรษฐ์</td>
@@ -47,11 +49,14 @@
             <td><button class="delete-btn">ลบ</button></td>
           </tr>
         </tbody>
+        <tbody>
+          
+        </tbody>
       </table>
       <button class="clear-all-btn">ลบทั้งหมด</button>
       <a href="index.html"><button class="return">หน้าแรก</button></a>
     </div>
   </div>
-  <script src="script_page2.js"></script>  
+
 </body>
 </html>

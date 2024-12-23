@@ -5,57 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ยืมอุปกรณ์กีฬา</title>
     <link rel="stylesheet" href="css/page1.css">
+    <script src="script_page1.js" defer></script>  
 </head>
 <body>
-    <div id="form">
+    <form id="borrow-form">
         <div class="container">
             <img src="img/unnamed.png" alt="Logo" class="logo">
-            <select name="dropdown" class="dropdown" id="dropdown_equipment">
+            <select name="dropdown" class="dropdown" id="dropdown_equipment" required>
                 <option value="">อุปกรณ์ที่ต้องการยืม</option>
-                <option value="">ลูกบอล</option>
-                <option value="">ลูกบาส</option>
-                <option value="">ลูกวอลเลย์บอล</option>
-                <option value="">ไม้แบดมินตัน/ลูกขนไก่</option>
-                <option value="">ไม้ปิงปอง/ลูกปิงปอง</option>
+                <option value="ลูกบอล">ลูกบอล</option>
+                <option value="ลูกบาส">ลูกบาส</option>
+                <option value="ลูกวอลเลย์บอล">ลูกวอลเลย์บอล</option>
+                <option value="ไม้แบดมินตัน/ลูกขนไก่">ไม้แบดมินตัน/ลูกขนไก่</option>
+                <option value="ไม้ปิงปอง/ลูกปิงปอง">ไม้ปิงปอง/ลูกปิงปอง</option>
             </select>
 
-            <select name="dropdown" class="dropdown" id="dropdown_GradeLevel">
+            <select name="dropdown" class="dropdown" id="dropdown_GradeLevel" required>
                 <option value="">ระดับชั้น/สาขา</option>
-                <option value="">ปวช 1/คอมพิเตอร์ธุรกิจ</option>
-                <option value="">ปวช 1/ภาษาต่างประเทศ</option>
-                <option value="">ปวช 2/คอมพิเตอร์ธุรกิจ</option>
-                <option value="">ปวช 2/ภาษาต่างประเทศ</option>
-                <option value="">ปวช 3/คอมพิเตอร์ธุรกิจ</option>
-                <option value="">ปวช 3/ภาษาต่างประเทศ</option>
-                <option value="">ปวส 1/-</option>
-                <option value="">ปวส 2/-</option>
+                <option value="ปวช 1/คอมพิเตอร์ธุรกิจ">ปวช 1/คอมพิเตอร์ธุรกิจ</option>
+                <option value="ปวช 1/ภาษาต่างประเทศ">ปวช 1/ภาษาต่างประเทศ</option>
+                <option value="ปวช 2/คอมพิเตอร์ธุรกิจ">ปวช 2/คอมพิเตอร์ธุรกิจ</option>
+                <option value="ปวช 2/ภาษาต่างประเทศ">ปวช 2/ภาษาต่างประเทศ</option>
+                <option value="ปวช 3/คอมพิเตอร์ธุรกิจ">ปวช 3/คอมพิเตอร์ธุรกิจ</option>
+                <option value="ปวช 3/ภาษาต่างประเทศ">ปวช 3/ภาษาต่างประเทศ</option>
+                <option value="ปวส 1">ปวส 1/-</option>
+                <option value="ปวส 2">ปวส 2/-</option>
 
             </select>
 
-            <select name="dropdown" class="dropdown" id="dropdown_Prefix">
+<!--             <select name="dropdown" class="dropdown" id="dropdown_Prefix" required>
                 <option value="">คำนำหน้า</option>
                 <option value="">นาย</option>
                 <option value="">นางสาว</option>
-            </select>
+            </select> -->
 
-            <input type="text" name="" placeholder="ชื่อ-นามสกุล" class="input-field" id="Name_Surname">
+            <input type="text" name="" placeholder="คำนำหน้า-ชื่อ-นามสกุล" class="input-field" id="Name_Surname" required>
 
             <!-- <input type="text" placeholder="ชื่อ-นามสกุล" class="input-field"> -->
-            <input type="text" name="" placeholder="รหัสนักเรียน" class="input-field" id="Student_ID">
+            <input type="text" name="" placeholder="รหัสนักเรียน" class="input-field" id="Student_ID" required>
             <!-- <input type="text" placeholder="ห้องเรียน/สาขา" class="input-field"> -->
             <div class="inputs">
-                <input type="date" class="field" id="date-field">
+                <input type="date" class="field" id="date-field" required>
                 <span class="time-separator">-</span>
-                <input type="date" class="field" id="date-field">
+                <input type="date" class="field" id="date-field" required>
             </div>
             <div class="inputs">
-                <input type="time" class="field" id="time-field">
+                <input type="time" class="field" id="time-field" required>
                 <span class="time-separator">-</span>
-                <input type="time" class="field" id="time-field">
+                <input type="time" class="field" id="time-field" required>
             </div>
-            <button onclick="sendData()" class="submit-btn" id="submit-btn">ยืนยัน</button>
+            <button type="button" class="submit-btn" id="submit-btn" onclick="saveBorrowData()">ยืนยัน</button>
         </div>
-    </ก>
-    <script src="script_page1.js"></script>  
+    </form>
+    
 </body>
 </html>
