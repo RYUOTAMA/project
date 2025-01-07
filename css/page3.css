@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  
+  .container {
+    max-width: 70%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .header {
+    background-color: #cdeaff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .table-container {
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th, .table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .table th {
+    background-color: #f5f5f5;
+  }
+  
+  .delete-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: white;
+  }
+
+  .delete-btn:hover{
+    background-color: #d44545;
+    transition: all 0.2s ease;
+  }
+  
+  .clear-all-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .clear-all-btn:hover{
+    background-color: #d44545;
+    transition: all 0.2s ease;
+  }
+
+  .return{
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(68, 143, 214);
+    color: white;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .return:hover{
+    background-color: rgb(54, 115, 172);
+    transition: all 0.2s ease;
+  }
+
+  A:link {
+    text-decoration:none;
+  }
+  A:visited {
+    text-decoration:none;
+  }
+  
