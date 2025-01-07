@@ -14,12 +14,12 @@ function renderTable() {
       const row = tableBody.insertRow();
       row.insertCell(0).textContent = index + 1;
       row.insertCell(1).textContent = record.NameSurname;
-      row.insertCell(2).textContent = record.StudentID;
-      row.insertCell(3).textContent = record.dropdownequipment;
-      row.insertCell(4).textContent = record.dropdownGradeLevel;
-      row.insertCell(5).textContent = record.time;
-      row.insertCell(6).textContent = record.date;
-      const deleteCell = row.insertCell(7);
+      /* row.insertCell(2).textContent = record.StudentID; */
+      row.insertCell(2).textContent = record.dropdownequipment;
+      row.insertCell(3).textContent = record.dropdownGradeLevel;
+      row.insertCell(4).textContent = record.time;
+      row.insertCell(5).textContent = record.date;
+      const deleteCell = row.insertCell(6);
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'ลบ';
       deleteBtn.classList.add('delete-btn');
