@@ -12,13 +12,21 @@ function getInfo() {
     var isMatch = false;
 
     for (i = 0; i < objpeople.length; i++) {
+        if (!username || !password) {
+            alert('กรุณากรอกข้อมูลให้ครบถ้วน');
+            break;
+          }
+
         if (username == objpeople[i].username && password == objpeople[i].password){
             window.location.href = 'index.html';
             isMatch = true;
-            break;
+        }
+    
+        if (!isMatch) {
+            alert("Username หรือ Password ไม่ถูกต้อง!");
+            return;
         }
     }
-    if (!isMatch) {
-        alert("Username หรือ Password ไม่ถูกต้อง!");
-    }
+
+    
 }
