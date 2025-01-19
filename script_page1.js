@@ -5,13 +5,13 @@ function saveBorrowData() {
   /* const dropdownPrefix = document.getElementById('dropdown_Prefix').value; */
   const NameSurname = document.getElementById('Name_Surname').value;
   /* const StudentID = document.getElementById('Student_ID').value; */
-  const dateStart = document.getElementsByClassName('field')[0].value;
-  const dateEnd = document.getElementsByClassName('field')[1].value;
-  const date = document.getElementsByClassName('field')[2].value;
-  const timeStart = document.getElementsByClassName('field')[2].value;
-  const timeEnd = document.getElementsByClassName('field')[3].value;
+  /* const dateStart = document.getElementsByClassName('field')[0].value;
+  const dateEnd = document.getElementsByClassName('field')[1].value; */
+  const date = document.getElementsByClassName('field')[0].value;
+  const timeStart = document.getElementsByClassName('field')[1].value;
+  const timeEnd = document.getElementsByClassName('field')[2].value;
 
-  if (!dropdownequipment || !dropdownGradeLevel /* || !dropdownPrefix */ || !NameSurname /* || !StudentID */ || !dateStart || !dateEnd || !timeStart || !timeEnd) {
+  if (!dropdownequipment || !dropdownGradeLevel /* || !dropdownPrefix */ || !NameSurname /* || !StudentID */ || !date  /* Start || !dateEnd */ || !timeStart || !timeEnd) {
     alert('กรุณากรอกข้อมูลให้ครบถ้วน');
     return;
   }
@@ -22,7 +22,7 @@ function saveBorrowData() {
   /*   dropdownPrefix, */
     NameSurname,
     /* StudentID, */
-    date: `${dateStart} - ${dateEnd}`,
+    date/* : `${dateStart} - ${dateEnd}` */,
     time: `${timeStart} - ${timeEnd}`
   };
 
