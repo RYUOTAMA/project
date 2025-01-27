@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    max-width: 70%;
+    max-width: 90%;
     margin: 20px auto;
     background: white;
     border-radius: 10px;
@@ -43,6 +43,35 @@ body {
   .table th {
     background-color: #f5f5f5;
   }
+
+  /* ปุ่มคืนปกติ */
+.manage-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eafb2f;
+  color: white;
+}
+
+.manage-btn:hover {
+  background-color: #a9b520;
+    transition: all 0.2s ease;
+}
+
+/* .manage-btn.yellow-btn {
+  background-color: #f7b500;
+} */
+
+/* ปุ่มคืนแล้ว (สีเขียวเข้ม) */
+.manage-btn.green-btn {
+  background-color: #2acc21;
+  cursor: not-allowed;
+}
+
   
   .delete-btn {
     display: inline-block;
