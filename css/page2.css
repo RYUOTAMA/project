@@ -15,13 +15,24 @@ body {
   }
   
   .header {
-    background-color: #cdeaff;
-    padding: 20px;
-    text-align: center;
+    background: rgb(255, 255, 255);
+    background-size: 300%;
+/*     background-image: url(/img/banner.png); */
+/*     width:928px ;
+    height: 100px; */
+    /* padding: 20px; */
+    /* text-align: center; */
   }
   
   .logo {
-    max-width: 100px;
+    max-width: 100%;
+    border: 10px;
+  }
+
+  .thead{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 24px;
   }
   
   .table-container {
@@ -53,12 +64,12 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #eafb2f;
+  background-color: #5bfb2f;
   color: white;
 }
 
 .manage-btn:hover {
-  background-color: #a9b520;
+  background-color: #23b520;
     transition: all 0.2s ease;
 }
 

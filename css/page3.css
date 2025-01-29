@@ -15,15 +15,21 @@ body {
   }
   
   .header {
-    background-color: #cdeaff;
-    padding: 20px;
+    background-color: #ffffff;
     text-align: center;
   }
   
   .logo {
-    max-width: 100px;
+    max-width: 100%;
+    border: 10px;
   }
   
+  .thead{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+
   .table-container {
     padding: 20px;
   }

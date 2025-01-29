@@ -21,7 +21,7 @@ function renderTable() {
       // ปุ่มจัดการ (คืน)
       const manageCell = row.insertCell(6);
       const manageBtn = document.createElement('button');
-      manageBtn.textContent = 'คืน';
+      manageBtn.textContent = 'คืนอุปกรณ์';
       manageBtn.classList.add('manage-btn');
 
       // ตรวจสอบสถานะคืน
@@ -36,12 +36,12 @@ function renderTable() {
       manageCell.appendChild(manageBtn);
 
       // ปุ่มลบ
-      const deleteCell = row.insertCell(7);
+      /* const deleteCell = row.insertCell(7);
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'ลบ';
       deleteBtn.classList.add('delete-btn');
       deleteBtn.onclick = () => deleteRecord(index);
-      deleteCell.appendChild(deleteBtn);
+      deleteCell.appendChild(deleteBtn); */
     });
   }
 }
@@ -67,13 +67,18 @@ function manageRecord(index, button) {
   let managedRecords = JSON.parse(localStorage.getItem('managedRecords')) || [];
   managedRecords.push(record);
   localStorage.setItem('managedRecords', JSON.stringify(managedRecords));
-}
 
-function deleteRecord(index) {
+  // ลบแถวออกจาก borrowRecords และ Local Storage
   borrowRecords.splice(index, 1);
   localStorage.setItem('borrowRecords', JSON.stringify(borrowRecords));
   renderTable();
 }
+
+/* function deleteRecord(index) {
+  borrowRecords.splice(index, 1);
+  localStorage.setItem('borrowRecords', JSON.stringify(borrowRecords));
+  renderTable();
+} */
 
 const clearAllBtn = document.querySelector('.clear-all-btn');
 clearAllBtn.addEventListener('click', () => {
