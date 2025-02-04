@@ -1,7 +1,8 @@
 /* styles.css */
 body {
-    background-image: url(/img/snapedit_1737357877205.png);
+    background-image: url(/img/background.png);
     background-size: 100%;
+    /* backdrop-filter:blur(5px) ; */
     /* -webkit-background-size: cover;
     background-size: cover;
     width: 100vw;

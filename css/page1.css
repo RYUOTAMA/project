@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image:url(/img/snapedit_1737357877205.png) ;
+    background-image: url(/img/background.png);
     background-size: 100%;
     /* background-color: whitesmoke; */ /* Light Blue Background */
     display: flex;

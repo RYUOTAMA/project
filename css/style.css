@@ -2,7 +2,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: whitesmoke; /* Light Blue Background */
+    /* background-color: whitesmoke; */ /* Light Blue Background */
+    background-image: url(/img/background.png);
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
